@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  color: #f8fafc;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.alert {
+  background-color: #dc2626;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sensor-info {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.chart-container {
+  margin-top: 2rem;
+}
+
+.send-button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #10b981, #059669);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-button:hover {
+  background: linear-gradient(to right, #059669, #047857);
+}
+
+/* Log Panel */
+.logs-box {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+.logs-box ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.logs-box li {
+  margin-bottom: 0.4rem;
+}
+
+.highlight {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #a78bfa;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Chart label fix */
+.recharts-cartesian-axis-tick-value {
+  fill: #fff !important;
+}
